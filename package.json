@@ -1,0 +1,26 @@
+{
+    "name": "rmarkdown",
+    "displayName": "RMarkdown",
+    "description": "Rmarkdown support for vscode",
+    "version": "0.0.1",
+    "publisher": "bsouthga",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rmarkdown",
+            "aliases": ["R Markdown", "rmarkdown"],
+            "extensions": [".mdown",".markdown",".markdn",".md.hbs",".md",".rmdown",".rmarkdown",".rmarkdn",".rmd"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rmarkdown",
+            "scopeName": "text.html.markdown.rmarkdown",
+            "path": "./syntaxes/RMarkdown.tmLanguage"
+        }]
+    }
+}
